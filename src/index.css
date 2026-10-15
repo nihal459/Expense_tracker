@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light;
+  --page: #f4f4f1;
+  --surface: #fcfcfb;
+  --surface-2: #f0efeb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --border: rgba(11, 11, 11, 0.08);
+  --accent: #2a78d6;
+  --accent-2: #6250d6;
+  --accent-soft: #e6f0fc;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #6250d6;
+  --series-8: #e34948;
+  --series-other: #b5b3ab;
+  --series-save: #1baf7a;
+  --neg: #e34948;
+  --good: #006300;
+  --bad: #d03b3b;
+  --shadow: 0 1px 2px rgba(11, 11, 11, 0.04), 0 8px 24px rgba(11, 11, 11, 0.05);
+  --glass: rgba(244, 244, 241, 0.8);
+
+  font: 15px/1.45 Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  color: var(--ink);
+  background: var(--page);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* index.html sets data-theme before first paint from the saved choice or the system setting */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-2: #232322;
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --grid: #2c2c2a;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #3987e5;
+  --accent-2: #9085e9;
+  --accent-soft: #16263a;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  --series-other: #5c5b57;
+  --series-save: #199e70;
+  --neg: #e66767;
+  --good: #0ca30c;
+  --bad: #e66767;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+  --glass: rgba(13, 13, 13, 0.8);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--page); transition: background 0.2s; }
+button, input { font: inherit; color: inherit; }
